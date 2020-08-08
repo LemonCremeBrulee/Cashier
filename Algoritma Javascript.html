@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<h1>Pembagian Uang</h1>
+<p>Input Uang</p>
+<input type="text" id="txt"><br></br>
+<script>
+    var seratusRibu ;
+    var duaPuluhRibu;
+    var sepuluhRibu ;
+    var limaRibu;
+    var duaRibu ;
+    var seribu ;
+    var limaRatus ; 
+    var duaRatus ;
+    var seratus ;
+    var limaPuluh;
+    var duaLima;
+    var satu ;
+    var uang = parseInt(document.getElementById("txt").value);
+    function hitung(uang) {
+        while(uang >= 100000){
+            uang -=100000
+            seratusRibu++;
+        }
+        if (seratusRibu > 0){
+            lblSeratusRibu.innerHTML = 'Seratus Ribu : ' + seratusRibu
+        }
+        else{
+            lblSeratusRibu.innerHTML = 'Seratus Ribu : 0'
+        }
+        
+        while(uang>=20000){
+            uang -=20000
+            duaPuluhRibu++;
+        }
+        if (duaPuluhRibu > 0){
+            lblDuaPuluhRibu.innerHTML = 'Dua Puluh Ribu : ' + duaPuluhRibu
+        }
+        else{
+            lblDuaPuluhRibu.innerHTML = 'Dua Puluh Ribu : 0'
+        }
+
+        while(uang>=10000){
+            uang -=10000
+            sepuluhRibu++;
+        }
+        if (sepuluhRibu > 0){
+            lblSepuluhRibu.innerHTML = 'Sepuluh Ribu : ' + sepuluhRibu
+        }
+        else{
+            lblSepuluhRibu.innerHTML = 'Sepuluh Ribu : 0'
+        }
+
+        while(uang>=5000){
+            uang -=5000
+            limaRibu++;
+        }
+        if (limaRibu > 0){
+            lblLimaRibu.innerHTML = 'Lima Ribu : ' + limaRibu
+        }
+        else{
+            lblLimaRibu.innerHTML = 'Lima Ribu : 0'
+        }
+
+        while(uang>=1000){
+            uang -=1000
+            seribu++;
+        }
+        if (limaRibu > 0){
+            lblSeribu.innerHTML = 'Seribu : ' + seribu
+        }
+        else{
+            lblSeribu.innerHTML = 'Seribu : 0'
+        }
+
+        while(uang>=500){
+            uang -=500
+            limaRatus++;
+        }
+        if (limaRatus > 0){
+            lblLimaRatus.innerHTML = 'Lima Ratus : ' + limaRatus
+        }
+        else{
+            lblLimaRatus.innerHTML = 'Lima Ratus : 0'
+        }
+
+        while(uang>=100){
+            uang -=100
+            seratus++;
+        }
+        if (seratus > 0){
+            lblSeratus.innerHTML = 'Seratus : ' + seratus
+        }
+        else{
+            lblSeratus.innerHTML = 'Seratus : 0'
+        }
+
+        while(uang>=50){
+            uang -=50
+            limaPuluh++;
+        }
+        if (limaPuluh > 0){
+            lblLimaPuluh.innerHTML = 'Lima Puluh : ' + limaPuluh
+        }
+        else{
+            lblLimaPuluh.innerHTML = 'Lima Puluh : 0'
+        }
+
+        while(uang>=25){
+            uang -=25
+            duaLima++;
+        }
+        if (duaLima > 0){
+            lblDuaLima.innerHTML = 'Dua Puluh Lima: ' + duaLima
+        }
+        else{
+            lblDuaLima.innerHTML = 'Dua Puluh Lima: 0'
+        }
+
+        while(uang>=1){
+            uang -=1
+            satu++;
+        }
+        if (satu > 0){
+            lblSatu.innerHTML = 'Satu: ' + satu
+        }
+        else{
+            lblSatu.innerHTML = 'Satu: 0'
+        }
+
+    }
+</script>
+
+
+<input type="button" value="Hitung" onclick="hitung()" ><br></br>
+<label id="lblSeratusRibu"></label><br></br>
+<label id="lblDuaPuluhRibu"></label><br></br>
+<label id="lblSepuluhRibu"></label><br></br>
+<label id="lblLimaRibu"></label><br></br>
+<label id="lblDuaRibu"></label><br></br>
+<label id="lblSeribu"></label><br></br>
+<label id="lblLimaRatus"></label><br></br>
+<label id="lblSeratus"></label><br></br>
+<label id="lblLimaPuluh"></label><br></br>
+<label id="lblDuaLima"></label><br></br>
+<label id="lblSatu"></label><br></br>
+
+</body>
+</html>

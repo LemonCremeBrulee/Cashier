@@ -1,0 +1,3 @@
+File HTML algoritma javascript berisikan logika pengkodean menggunakan javascript sementara aplikasi nya sendiri menggunakan
+framework React namun dikarenakan pemahaman react saya yang masih kurang sehingga saya belum dapat mengubah function/algoritma
+Javascript yang ada ke dalam bentuk code React
